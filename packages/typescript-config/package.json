@@ -1,0 +1,12 @@
+{
+	"name": "@zapp/typescript-config",
+	"version": "0.0.0",
+	"private": true,
+	"exports": {
+		"./base": "./base.json",
+		"./nestjs": "./nestjs.json",
+		"./nextjs": "./nextjs.json",
+		"./expo": "./expo.json",
+		"./library": "./library.json"
+	}
+}

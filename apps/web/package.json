@@ -1,0 +1,45 @@
+{
+	"name": "@zapp/web",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --turbopack -p 4991",
+		"build": "next build",
+		"start": "next start -p 4991",
+		"test": "vitest run",
+		"test:e2e": "playwright test",
+		"lint": "biome check src/",
+		"format": "biome format --write src/",
+		"check": "tsc --noEmit",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
+	},
+	"dependencies": {
+		"@radix-ui/react-slot": "1.2.4",
+		"@zapp/utils": "workspace:*",
+		"class-variance-authority": "0.7.1",
+		"clsx": "2.1.1",
+		"lucide-react": "1.8.0",
+		"next": "16.2.3",
+		"react": "19.2.5",
+		"react-dom": "19.2.5",
+		"tailwind-merge": "3.5.0"
+	},
+	"devDependencies": {
+		"@playwright/test": "1.59.1",
+		"@storybook/addon-essentials": "8.6.14",
+		"@storybook/nextjs": "8.6.14",
+		"@storybook/react": "8.6.14",
+		"@testing-library/react": "16.3.2",
+		"@types/react": "19.2.14",
+		"@types/react-dom": "19.2.3",
+		"@vitejs/plugin-react": "6.0.1",
+		"@zapp/typescript-config": "workspace:*",
+		"jsdom": "29.0.2",
+		"storybook": "8.6.14",
+		"tailwindcss": "4.2.2",
+		"@tailwindcss/postcss": "4.2.2",
+		"typescript": "6.0.2",
+		"vitest": "4.1.4"
+	}
+}

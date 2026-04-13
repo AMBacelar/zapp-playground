@@ -1,0 +1,11 @@
+{
+	"extends": "@zapp/typescript-config/expo",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	},
+	"include": ["src", "app.config.ts", "*.d.ts"],
+	"exclude": ["node_modules"]
+}

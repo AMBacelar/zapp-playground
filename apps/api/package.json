@@ -1,0 +1,33 @@
+{
+	"name": "@zapp/api",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "nest start --watch",
+		"build": "nest build",
+		"start": "node dist/main",
+		"seed": "tsx src/database/seed.ts",
+		"test": "vitest run",
+		"lint": "biome check src/",
+		"format": "biome format --write src/",
+		"check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@nestjs/common": "11.1.18",
+		"@nestjs/core": "11.1.18",
+		"@nestjs/platform-express": "11.1.18",
+		"@zapp/utils": "workspace:*",
+		"better-sqlite3": "12.9.0",
+		"reflect-metadata": "0.2.2",
+		"rxjs": "7.8.2"
+	},
+	"devDependencies": {
+		"@nestjs/cli": "11.0.19",
+		"@nestjs/testing": "11.1.18",
+		"@types/better-sqlite3": "7.6.13",
+		"@zapp/typescript-config": "workspace:*",
+		"tsx": "4.21.0",
+		"typescript": "6.0.2",
+		"vitest": "4.1.4"
+	}
+}

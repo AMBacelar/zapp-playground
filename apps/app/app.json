@@ -1,0 +1,13 @@
+{
+	"expo": {
+		"name": "Zapp",
+		"slug": "zapp",
+		"version": "1.0.0",
+		"scheme": "zapp",
+		"web": {
+			"bundler": "metro",
+			"output": "static"
+		},
+		"plugins": ["expo-router"]
+	}
+}

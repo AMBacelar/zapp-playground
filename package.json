@@ -1,0 +1,30 @@
+{
+	"name": "zapp-interview",
+	"private": true,
+	"packageManager": "pnpm@10.30.0",
+	"scripts": {
+		"dev": "turbo run dev",
+		"build": "turbo run build",
+		"test": "turbo run test",
+		"lint": "turbo run lint",
+		"format": "turbo run format",
+		"check": "turbo run check",
+		"seed": "turbo run seed --filter=@zapp/api",
+		"storybook": "turbo run storybook --filter=@zapp/web",
+		"android": "pnpm --filter @zapp/app android",
+		"ios": "pnpm --filter @zapp/app ios"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.11",
+		"turbo": "2.9.6"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@nestjs/core",
+			"better-sqlite3",
+			"core-js-pure",
+			"esbuild",
+			"sharp"
+		]
+	}
+}

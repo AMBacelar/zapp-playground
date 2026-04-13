@@ -1,0 +1,14 @@
+{
+	"extends": "./base.json",
+	"compilerOptions": {
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"declaration": false,
+		"declarationMap": false,
+		"ignoreDeprecations": "6.0"
+	}
+}
